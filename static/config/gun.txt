@@ -1,0 +1,25 @@
+# gun.txt — all weapons
+# format: gun_ID = name | damage | fireInterval | bulletSpeed | pellets | spread | magazine | reloadTime | color | rarity | flags
+# flags: pipe-separated keywords — explosive, homing, pierceInf, slow, chain, ricochet, noDrop
+
+pistol   = Pistol   | 1.0 | 0.22  | 620  | 1 | 0.030 | 12 | 1.2 | #c8ddff | 1.00 |
+smg      = SMG      | 0.7 | 0.075 | 660  | 1 | 0.110 | 30 | 1.6 | #7ee787 | 0.85 |
+shotgun  = Shotgun  | 1.2 | 0.75  | 520  | 6 | 0.280 | 6  | 2.0 | #f2cc60 | 0.70 |
+rifle    = Rifle    | 1.6 | 0.14  | 780  | 1 | 0.025 | 24 | 1.5 | #ff9d3f | 0.60 |
+sniper   = Sniper   | 4.5 | 1.15  | 1100 | 1 | 0.005 | 5  | 2.2 | #a78bfa | 0.35 |
+minigun  = Minigun  | 0.55| 0.045 | 700  | 1 | 0.160 | 80 | 3.0 | #ff5c68 | 0.20 |
+ruin     = RUIN     | 3.0 | 0.45  | 560  | 3 | 0.120 | 18 | 2.0 | #ff3040 | 0.05 | explosive
+eclipse  = ECLIPSE  | 2.2 | 0.10  | 900  | 1 | 0.020 | 36 | 1.4 | #a78bfa | 0.05 | pierceInf
+chaos    = CHAOS    | 2.5 | 0.09  | 800  | 1 | 0.100 | 45 | 1.6 | #ffd166 | 0.03 | explosive|ricochet
+frostbite= FROSTBITE| 1.8 | 0.14  | 700  | 1 | 0.050 | 28 | 1.5 | #58a6ff | 0.05 | slow
+vortex   = VORTEX   | 2.8 | 0.06  | 900  | 1 | 0.060 | 60 | 1.2 | #00e5ff | 0.02 | pierceInf|chain
+inferno  = INFERNO  | 3.5 | 0.11  | 700  | 2 | 0.090 | 40 | 1.8 | #ff5c00 | 0.02 | explosive
+rail     = RAILGUN  | 9.0 | 0.80  | 1600 | 1 | 0.001 | 8  | 2.5 | #ffd166 | 0.015| pierceInf
+plasma   = PLASMA   | 2.0 | 0.18  | 650  | 1 | 0.040 | 24 | 1.5 | #ff00ff | 0.03 | explosive|slow
+storm    = STORM    | 1.4 | 0.05  | 820  | 2 | 0.140 | 55 | 1.6 | #00e5ff | 0.04 | chain
+nova     = NOVA     | 5.5 | 0.55  | 400  | 1 | 0.180 | 14 | 2.3 | #ffd166 | 0.02 | explosive
+grim     = GRIM     | 1.2 | 0.13  | 900  | 3 | 0.030 | 24 | 1.5 | #7c2aa8 | 0.04 | pierceInf
+bolt     = BOLT     | 0.9 | 0.03  | 950  | 1 | 0.200 | 90 | 2.8 | #f2cc60 | 0.04 | chain
+venom    = VENOM    | 0.8 | 0.19  | 640  | 1 | 0.080 | 20 | 1.2 | #7ee787 | 0.05 | slow
+cinder   = CINDER   | 2.3 | 0.35  | 580  | 3 | 0.140 | 12 | 1.9 | #ff5c00 | 0.04 | explosive
+hive     = HIVE     | 1.6 | 0.09  | 720  | 1 | 0.110 | 40 | 1.4 | #a78bfa | 0.04 | homing

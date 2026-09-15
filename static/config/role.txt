@@ -1,0 +1,19 @@
+# role.txt — all roles
+# format: role_ID = name | rarity | color | desc
+# passive + skill defined in code, this just declares them
+
+soldier    = Soldier     | common    | #7ee787 | +15% dmg, +10% HP
+scout      = Scout       | common    | #58a6ff | +25% speed, +5% dodge
+brawler    = Brawler     | common    | #f2cc60 | +35% HP, -10% speed
+marksman   = Marksman    | rare      | #ff9d3f | +30% dmg, +15% crit
+medic      = Medic       | rare      | #a5f3b1 | Regen +2 HP/s, +15% HP
+engineer   = Engineer    | rare      | #c8ddff | +20% fire rate, +1 reroll
+phantom    = Phantom     | epic      | #a78bfa | 20% dodge, +30% speed
+juggernaut = Juggernaut  | epic      | #ff5c68 | +50% HP, -25% dmg taken
+stormcaller= Stormcaller | epic      | #7ee787 | Bullets chain lightning
+warlord    = Warlord     | legendary | #ff9d3f | +1 pellet, +40% dmg
+necromancer= Necromancer | legendary | #c8a2ff | Kills spawn ghost
+timewalker = Timewalker  | legendary | #58a6ff | Bullets slow 60%
+warden     = Warden      | mythic    | #ff3040 | 2x dmg, first-hit immunity, RUIN start
+voidwalker = Voidwalker  | mythic    | #a78bfa | Phase bullets, +50% dmg, ECLIPSE start
+sovereign  = Sovereign   | mythic    | #ffd166 | +2 pellets, +75% dmg, 2x coins, CHAOS start
