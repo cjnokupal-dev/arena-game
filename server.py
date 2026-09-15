@@ -5,7 +5,12 @@ import http.server
 import socketserver
 import os
 import json
-import sqlite3
+try:
+    import libsql_experimental as sqlite3
+    _USE_TURSO = True
+except ImportError:
+    import sqlite3
+    _USE_TURSO = False
 import hashlib
 import secrets
 import time
@@ -24,7 +29,12 @@ DB_LOCK = threading.Lock()
 
 
 def _conn():
-    c = sqlite3.connect(DB_PATH, timeout=10)
+    turso_url = os.environ.get('TURSO_URL')
+    turso_tok = os.environ.get('TURSO_TOKEN')
+    if turso_url and turso_tok:
+        c = sqlite3.connect(turso_url, auth_token=turso_tok)
+    else:
+        c = sqlite3.connect(DB_PATH, timeout=10)
     c.row_factory = sqlite3.Row
     return c
 
