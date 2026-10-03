@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Pixel Harvest — Farm Game</title>
+<link rel="stylesheet" href="/static/css/farm.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="game" width="320" height="180"></canvas>
+
+  <!-- Title screen -->
+  <div id="title" class="overlay">
+    <div class="panel">
+      <h1>PIXEL<br>HARVEST</h1>
+      <p class="sub">a tiny farming life</p>
+      <button id="btnPlay" class="btn big">PLAY</button>
+      <button id="btnNew" class="btn">NEW FARM</button>
+      <div class="help">
+        <b>MOVE</b> WASD / Arrows &nbsp; <b>USE</b> Space / E<br>
+        <b>TOOLS</b> 1-6, Q / Tab or mouse wheel<br>
+        <b>EAT</b> F (restores energy) &nbsp; <b>SLEEP</b> at the house<br>
+        Till &rarr; plant &rarr; water, then sleep. Crops only grow<br>
+        on days they were watered (or when it rains).
+      </div>
+    </div>
+  </div>
+
+  <!-- Shop -->
+  <div id="shop" class="overlay hidden">
+    <div class="panel wide">
+      <h2>MARKET STALL</h2>
+      <div class="cols">
+        <div class="col">
+          <h3>BUY</h3>
+          <div id="buyList" class="list"></div>
+        </div>
+        <div class="col">
+          <h3>SELL</h3>
+          <div id="sellList" class="list"></div>
+          <button id="sellAll" class="btn">SELL EVERYTHING</button>
+        </div>
+      </div>
+      <div class="foot"><span id="shopCoins">0g</span><button id="shopClose" class="btn">CLOSE (Esc)</button></div>
+    </div>
+  </div>
+
+  <!-- Day summary -->
+  <div id="sleep" class="overlay hidden">
+    <div class="panel">
+      <h2 id="sleepTitle">DAY 1</h2>
+      <div id="sleepBody" class="list"></div>
+      <button id="sleepClose" class="btn big">GOOD MORNING</button>
+    </div>
+  </div>
+
+  <!-- Touch controls -->
+  <div id="touch" class="hidden">
+    <div id="stick"><div id="nub"></div></div>
+    <div id="btns">
+      <button id="tA" class="tbtn">USE</button>
+      <button id="tB" class="tbtn small">TOOL</button>
+    </div>
+  </div>
+</div>
+<script src="/static/js/farm/game.js"></script>
+</body>
+</html>
